@@ -12,12 +12,23 @@ class App extends React.Component {
 	state = {
 		// 5 pieces of state: temp, city, country, humidity, description
 		temperature: undefined,
+		degreeType: 'fahrenheit',
 		city: undefined,
 		country: undefined,
 		humidity: undefined,
 		description: undefined,
 		error: undefined
 	};
+
+	updateDegree = (event) => {
+		this.setState(
+			{
+				degreeType: event.target.value
+			},
+			() => console.log(this.state)
+		);
+	};
+
 	getWeather = async (e) => {
 		e.preventDefault(); // prevent default behavior - refresh
 		const city = e.target.elements.city.value;

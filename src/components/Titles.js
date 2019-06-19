@@ -7,9 +7,7 @@ const Titles = () => (
 		<a href="https://github.com/connielion/react-weather" className="title-container__subtitle">
 			https://github.com/connielion/react-weather
 		</a>
-		<p className="title-container__subtitle">
-			Made with React.js,OpenWeatherMap API, Bootstrap, weather.css, Google Fonts.
-		</p>
+		<p className="title-container__subtitle">Made with React.js,OpenWeatherMap API, Bootstrap & Google Fonts.</p>
 	</div>
 );
 export default Titles;
