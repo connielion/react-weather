@@ -4,7 +4,8 @@ import Titles from './components/Titles';
 import Form from './components/Form';
 import Weather from './components/Weather';
 
-const API_KEY = '8e3debfb6e532881c65aac18f111c947';
+// I AIN'T SHOWING MY API KEY!!!
+const API_KEY = process.env.REACT_APP_API_KEY;
 
 class App extends React.Component {
 	// get weather data via API
