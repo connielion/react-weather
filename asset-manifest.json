@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.76f89b51.chunk.css",
-    "main.js": "/static/js/main.81a63835.chunk.js",
-    "main.js.map": "/static/js/main.81a63835.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-    "static/css/2.303a0673.chunk.css": "/static/css/2.303a0673.chunk.css",
-    "static/js/2.cf71b94b.chunk.js": "/static/js/2.cf71b94b.chunk.js",
-    "static/js/2.cf71b94b.chunk.js.map": "/static/js/2.cf71b94b.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.d4b442fbee6f5f52d84bc709ad8274f7.js": "/precache-manifest.d4b442fbee6f5f52d84bc709ad8274f7.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.303a0673.chunk.css.map": "/static/css/2.303a0673.chunk.css.map",
-    "static/css/main.76f89b51.chunk.css.map": "/static/css/main.76f89b51.chunk.css.map",
-    "static/media/App.css": "/static/media/bg.577ccb79.jpg",
-    "static/media/bootstrap.min.css": "/static/media/glyphicons-halflings-regular.fa277232.woff"
+    "main.css": "/react-weather/static/css/main.6a5b0621.chunk.css",
+    "main.js": "/react-weather/static/js/main.132aef97.chunk.js",
+    "main.js.map": "/react-weather/static/js/main.132aef97.chunk.js.map",
+    "runtime~main.js": "/react-weather/static/js/runtime~main.2302d1fd.js",
+    "runtime~main.js.map": "/react-weather/static/js/runtime~main.2302d1fd.js.map",
+    "static/css/2.c5174c75.chunk.css": "/react-weather/static/css/2.c5174c75.chunk.css",
+    "static/js/2.3839f2b0.chunk.js": "/react-weather/static/js/2.3839f2b0.chunk.js",
+    "static/js/2.3839f2b0.chunk.js.map": "/react-weather/static/js/2.3839f2b0.chunk.js.map",
+    "index.html": "/react-weather/index.html",
+    "precache-manifest.2954a88867115bfa43368499301ffc16.js": "/react-weather/precache-manifest.2954a88867115bfa43368499301ffc16.js",
+    "service-worker.js": "/react-weather/service-worker.js",
+    "static/css/2.c5174c75.chunk.css.map": "/react-weather/static/css/2.c5174c75.chunk.css.map",
+    "static/css/main.6a5b0621.chunk.css.map": "/react-weather/static/css/main.6a5b0621.chunk.css.map",
+    "static/media/App.css": "/react-weather/static/media/bg.577ccb79.jpg",
+    "static/media/bootstrap.min.css": "/react-weather/static/media/glyphicons-halflings-regular.fa277232.woff"
   }
 }
