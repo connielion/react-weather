@@ -5,11 +5,13 @@
   "homepage": "http://connielion.github.io/react-weather",
   "dependencies": {
     "@material-ui/core": "^4.1.1",
-    "bootstrap": "^3.3.7",
+    "bootstrap": "^3.4.1",
     "dotenv": "^8.0.0",
     "react": "^16.8.6",
+    "react-bootstrap": "^1.0.0-beta.9",
     "react-dom": "^16.8.6",
     "react-responsive": "^7.0.0",
+    "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1"
   },
   "scripts": {
