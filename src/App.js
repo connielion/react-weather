@@ -30,6 +30,8 @@ class App extends React.Component {
 		if (city && country) {
 			this.setState({
 				temperature: data.main.temp,
+				min_temperature: data.main.temp_min,
+				max_temperature: data.main.temp_max,
 				city: data.name,
 				country: data.sys.country,
 				humidity: data.main.humidity,
@@ -39,6 +41,8 @@ class App extends React.Component {
 		} else {
 			this.setState({
 				temperature: undefined,
+				min_temperature: undefined,
+				max_temperature: undefined,
 				city: undefined,
 				country: undefined,
 				humidity: undefined,
@@ -61,6 +65,8 @@ class App extends React.Component {
 									<Form getWeather={this.getWeather} />
 									<Weather
 										temperature={this.state.temperature}
+										min_temperature={this.state.min_temperature}
+										max_temperature={this.state.max_temperature}
 										humidity={this.state.humidity}
 										city={this.state.city}
 										country={this.state.country}
