@@ -20,7 +20,7 @@ body {
 	background: #000;
 	opacity: 0.7;
 	box-shadow: 0px 13px 40px -13px rgba(0, 0, 0, 0.75);
-	width: 80%;
+	width: 90%;
 	margin: 0 auto;
 }
 
@@ -32,6 +32,7 @@ body {
 	justify-content: center;
 	text-align: center;
 	color: #fff;
+	padding: 20px;
 }
 
 .title-container__title {
@@ -53,7 +54,7 @@ body {
 
 .form-container {
 	height: 90vh;
-	padding-top: 100px;
+	padding-top: 80px;
 	padding-left: 50px;
 
 	color: #f1f1f1;
@@ -68,7 +69,7 @@ input[type="text"] {
 	color: #fff!important;
 	font-weight: lighter;
 	letter-spacing: 2px;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 	margin-right: 20px;
 	font-size: 20px;
 	font-weight: 500;
@@ -112,7 +113,7 @@ button:active {
 .weather__key {
 	color: #f16051;
 	border-bottom: solid 2px rgba(255, 255, 255, 0.06);
-	padding: 20px 0 20px 0;
+	padding: 10px 0 10px 0;
 	font-weight: 400;
 }
 
@@ -122,7 +123,7 @@ button:active {
 
 .weather__value {
 	color: #f1f1f1;
-	font-weight: 400;
+	font-size: 18px;
 }
 
 .weather__error {

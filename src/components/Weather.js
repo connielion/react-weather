@@ -37,6 +37,7 @@ const Weather = (props) => (
 				Humidity: <span className="weather__value">{props.humidity} %</span>
 			</p>
 		)}
+
 		{props.description && (
 			<p className="weather__key">
 				Conditions: <span className="weather__value">{props.description}</span>
