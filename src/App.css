@@ -7,12 +7,18 @@ body {
 }
 
 .wrapper {
-	height: 100vh;
+	min-height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: url("./img/bg.jpg") center center no-repeat;
+	background: url("./img/bg-opt.jpg") center center no-repeat;
 	background-size: cover;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	overflow: hidden;
 }
 
 .main {
@@ -20,23 +26,23 @@ body {
 	background: #000;
 	opacity: 0.7;
 	box-shadow: 0px 13px 40px -13px rgba(0, 0, 0, 0.75);
-	width: 90%;
+	width: 80%;
 	margin: 0 auto;
 }
 
+
 .title-container {
-	height: 90vh;
+	margin: 0 auto;
 	background-size: cover;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
 	color: #fff;
-	padding: 20px;
 }
 
 .title-container__title {
-	font-size: 50px;
+	font-size: 20px;
 	letter-spacing: 2px;
 	line-height: 1.3;
 	font-family: 'Roboto Slab', serif;
@@ -45,18 +51,18 @@ body {
 
 .title-container__subtitle {
 	font-style: italic;
+	font-size: 14px;
 	font-weight: 100;
 	letter-spacing: 1px;
 	line-height: 1.5;
 	font-family: "Merriweather", serif;
-	text-shadow: 2px 2px #000;
+	
 }
 
 .form-container {
 	height: 90vh;
-	padding-top: 80px;
-	padding-left: 50px;
-
+	padding-top: 30px;
+	
 	color: #f1f1f1;
 }
 
@@ -64,14 +70,14 @@ input[type="text"] {
 	background-color: transparent;
 	border: 0;
 	border-bottom: solid 1px #f16051;
-	width: 30%;
+	width: 250px;
 	padding-bottom: 4px;
 	color: #fff!important;
 	font-weight: lighter;
 	letter-spacing: 2px;
 	margin-bottom: 20px;
-	margin-right: 20px;
-	font-size: 20px;
+    margin-right: 20px;
+	font-size: 16px;
 	font-weight: 500;
 }
 
@@ -96,7 +102,8 @@ button {
 	cursor: pointer;
 	background-color: #f16051;
 	color: #fff;
-	font-weight: 100;
+	font-weight: 200;
+	font-family: 'Roboto Slab', serif;
 }
 
 button:active {
@@ -104,8 +111,8 @@ button:active {
 }
 
 .weather__info {
-	width: 60%;
-	font-size: 20px;
+	width: 80%;
+	
 	font-weight: 200;
 	letter-spacing: 2px;
 }
@@ -114,7 +121,7 @@ button:active {
 	color: #f16051;
 	border-bottom: solid 2px rgba(255, 255, 255, 0.06);
 	padding: 10px 0 10px 0;
-	font-weight: 400;
+	font-weight: bold;
 }
 
 .weather__key:last-child {
@@ -123,7 +130,7 @@ button:active {
 
 .weather__value {
 	color: #f1f1f1;
-	font-size: 18px;
+	font-size: 14px;
 }
 
 .weather__error {
@@ -133,3 +140,63 @@ button:active {
 	letter-spacing: 1px;
 	font-weight: 200;
 }
+
+@media only screen and (min-width: 768px) {
+	/* For desktop: */
+	button {
+		border: 0;
+		padding: 8px 20px;
+		margin: 0 2px;
+		border-radius: 2px;
+		font-weight: lighter;
+		letter-spacing: 1px;
+		font-size: 15px;
+		cursor: pointer;
+		background-color: #f16051;
+		color: #fff;
+		font-weight: bold;
+		font-family: 'Roboto Slab', serif;
+	}
+	.title-container__title {
+		font-size: 30px;
+		letter-spacing: 2px;
+		line-height: 1.3;
+		font-family: 'Roboto Slab', serif;
+		text-shadow: 2px 2px #000;
+	}
+	
+	.title-container__subtitle {
+		font-style: italic;
+		font-size: 14px;
+		font-weight: 100;
+		letter-spacing: 2px;
+		line-height: 2.0;
+		font-family: "Merriweather", serif;
+		
+	}
+	input[type="text"] {
+		background-color: transparent;
+		border: 0;
+		border-bottom: solid 1px #f16051;
+		width: 250px;
+		padding-bottom: 4px;
+		color: #fff!important;
+		font-weight: lighter;
+		letter-spacing: 2px;
+		margin-bottom: 20px;
+		margin-right: 20px;
+		font-size: 20px;
+		font-weight: 500;
+	}
+	.weather__key {
+		color: #f16051;
+		border-bottom: solid 2px rgba(255, 255, 255, 0.06);
+		padding: 10px 0 10px 0;
+		font-weight: bold;
+		font-size: 22px;
+	}
+	.weather__value {
+		color: #f1f1f1;
+		font-size: 22px;
+	}
+  }

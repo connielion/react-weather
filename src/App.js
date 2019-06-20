@@ -2,6 +2,9 @@ import React from 'react';
 import Titles from './components/Titles';
 import Form from './components/Form';
 import Weather from './components/Weather';
+
+
+
 require('dotenv').config();
 
 // I AIN'T SHOWING MY API KEY!!!
@@ -32,11 +35,10 @@ class App extends React.Component {
 				temperature: data.main.temp,
 				min_temperature: data.main.temp_min,
 				max_temperature: data.main.temp_max,
-				city: data.name,
-				country: data.sys.country,
+				city: data.name.toUpperCase(),
+				country: data.sys.country.toUpperCase(),
 				humidity: data.main.humidity,
 				description: data.weather[0].description.toUpperCase(),
-				weather: data.weather[0].icon,
 				error: ""
 			});
 		} else {
@@ -48,7 +50,7 @@ class App extends React.Component {
 				country: undefined,
 				humidity: undefined,
 				description: undefined,
-				error: "Please enter the values."
+				error: "Please enter a location."
 			});
 		}
 	}
@@ -59,10 +61,10 @@ class App extends React.Component {
 					<div className="main">
 						<div className="container">
 							<div className="row">
-								<div className="col-xs-4 title-container">
+								<div className="col-md-4 title-container">
 									<Titles />
 								</div>
-								<div className="col-xs-8 form-container">
+								<div className="col-md-8 form-container">
 									<Form getWeather={this.getWeather} />
 									<Weather
 										temperature={this.state.temperature}
@@ -71,7 +73,7 @@ class App extends React.Component {
 										humidity={this.state.humidity}
 										city={this.state.city}
 										country={this.state.country}
-										weather={this.state.weather}
+
 										description={this.state.description}
 										error={this.state.error}
 									/>

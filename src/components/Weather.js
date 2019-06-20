@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Weather = (props) => (
-	<div className="weather__info">
+	<div >
 		{/* render  when props exist  */}
 		{props.city &&
 			props.country && (
@@ -21,14 +21,14 @@ const Weather = (props) => (
 		{
 			props.max_temperature && (
 				<p className="weather__key">
-					Highest temperature: <span className="weather__value">{props.max_temperature}</span>
+					Highest temperature: <span className="weather__value">{props.max_temperature} °F</span>
 				</p>
 			)
 		}
 		{
 			props.min_temperature && (
 				<p className="weather__key">
-					Lowest temperature: <span className="weather__value">{props.min_temperature}</span>
+					Lowest temperature: <span className="weather__value">{props.min_temperature} °F</span>
 				</p>
 			)
 		}
