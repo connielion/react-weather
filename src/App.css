@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather:100,200,300,300i,400,400i,700');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
 
 body {
 	font-family: "Open Sans", serif;
@@ -52,7 +53,7 @@ body {
 	font-size: 18px;
 	letter-spacing: 2px;
 	line-height: 1.3;
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Righteous', cursive;
 	text-shadow: 2px 2px #000;
 }
 
@@ -180,9 +181,9 @@ button:active {
 	
 	.title-container__subtitle {
 		font-style: italic;
-		font-size: 14px;
+		font-size: 12px;
 		font-weight: 100;
-		letter-spacing: 2px;
+		letter-spacing: 1.5px;
 		line-height: 2.0;
 		font-family: "Merriweather", serif;
 		
@@ -215,5 +216,29 @@ button:active {
 	.icon {
 		min-width: 100px;
 		min-height: 100px;
+	}
+	.title-container__title {
+		font-size: 28px;
+		letter-spacing: 2px;
+		line-height: 1.3;
+		font-family: 'Righteous', cursive;
+		text-shadow: 2px 2px #000;
+	}
+	.title-container__subtitle {
+		font-style: italic;
+		font-size: 18px;
+		font-weight: 100;
+		letter-spacing: 1px;
+		line-height: 1.5;
+		font-family: "Merriweather", serif;
+		
+	}
+	.gh-link {
+		font-size: 14px;
+		color: white;
+	}
+	.gh-btn {
+		
+		background-color: black;
 	}
   }

@@ -39,6 +39,9 @@
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",
-    "gh-pages": "^2.0.1"
+    "@babel/preset-env": "^7.4.5",
+    "@fortawesome/fontawesome-free": "^5.9.0",
+    "gh-pages": "^2.0.1",
+    "webpack": "^4.35.0"
   }
 }

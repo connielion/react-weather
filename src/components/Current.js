@@ -52,7 +52,7 @@ class Current extends React.Component {
 				city: undefined,
 				country: undefined,
 				humidity: undefined,
-				icon: data.weather[0].icon,
+				icon: undefined,
 				description: undefined,
 				error: "Please enter a location."
 			});
@@ -64,6 +64,7 @@ class Current extends React.Component {
 
 				<div className="wrapper">
 					<Nav />
+					{/* NAV */}
 					<div className="main">
 						<div className="container">
 							<div className="row">

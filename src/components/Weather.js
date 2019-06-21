@@ -39,16 +39,14 @@ const Weather = (props) => (
 			</p>
 		)}
 
-		{props.description && (
+		{props.description && props.icon && (
 			<p className="weather__key">
-				Conditions: <span className="weather__value">{props.description}</span>
+				Conditions: <span className="weather__value">{props.description}
+					<img src={`http://openweathermap.org/img/w/${props.icon}.png`} alt="icon" className="img-fluid icon" />
+				</span>
 			</p>
 		)}
-		{
-			props.icon && (
-				<img src={`http://openweathermap.org/img/w/${props.icon}.png`} alt="icon" className="img-fluid icon" />
-			)
-		}
+
 
 		{props.error && <p className="weather__error">{props.error}</p>}
 	</div>

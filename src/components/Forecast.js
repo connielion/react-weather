@@ -1,6 +1,7 @@
 import React from 'react';
 import Form from './Form';
 import Weather from './Weather';
+import Titles from './Titles';
 import Nav from './Nav';
 
 // I AIN'T SHOWING MY API KEY!!!
@@ -62,8 +63,10 @@ class Forecast extends React.Component {
                     <div className="main">
                         <div className="container">
                             <div className="row">
-
-                                <div className="col-md-10 form-container">
+                                <div className="col-md-4 title-container">
+                                    <Titles />
+                                </div>
+                                <div className="col-md-8 form-container">
                                     <Form getWeather={this.getWeather} />
                                     <Weather
                                         temperature={this.state.temperature}
