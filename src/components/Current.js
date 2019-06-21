@@ -16,9 +16,12 @@ class Current extends React.Component {
 
 	state = {
 		temperature: undefined,
+		min_temperature: undefined,
+		max_temperature: undefined,
 		city: undefined,
 		country: undefined,
 		humidity: undefined,
+		icon: undefined,
 		description: undefined,
 		error: undefined
 	}
@@ -37,6 +40,7 @@ class Current extends React.Component {
 				city: data.name.toUpperCase(),
 				country: data.sys.country.toUpperCase(),
 				humidity: data.main.humidity,
+				icon: data.weather[0].icon,
 				description: data.weather[0].description.toUpperCase(),
 				error: ""
 			});
@@ -48,6 +52,7 @@ class Current extends React.Component {
 				city: undefined,
 				country: undefined,
 				humidity: undefined,
+				icon: data.weather[0].icon,
 				description: undefined,
 				error: "Please enter a location."
 			});
@@ -76,6 +81,7 @@ class Current extends React.Component {
 										country={this.state.country}
 
 										description={this.state.description}
+										icon={this.state.icon}
 										error={this.state.error}
 									/>
 								</div>
