@@ -1,5 +1,10 @@
 import React from 'react';
 
+{/* Stateless functional component?
+
+- receives props
+*/}
+
 const Form = (props) => (
 	<form onSubmit={props.getWeather}>
 		<input name="city" placeholder="City (ex: Seatle)" type="text" />
